@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cuerpo{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_navegador{
+    background-color: aqua;
+}
+
+.navegador__lista {
+    list-style: none;
+    
+}
+
+.item{
+    text-decoration: none;
+    color: black;
+}
