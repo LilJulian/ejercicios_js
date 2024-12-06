@@ -3,17 +3,21 @@
 // excepciones y el mensaje debe ser personalizado.
 
 function ejercicio3(a, b) {
-    // a = parseInt(prompt("Ingrese el dividendo"));
-    // b = parseInt(prompt("Ingrese el divisor"));
+    a = parseInt(prompt("Ingrese el dividendo"));
+    b = parseInt(prompt("Ingrese el divisor"));
     try {
         let divi = a / b;
-        alert(`${a} / ${b} = ${divi}`)
-        
-    } catch (error) {
+        if (b === 0){
+            throw new Error("EL divisor no puede ser cero");
+        }else{
+            alert(`${a} / ${b} = ${divi}`)
         }
         
-    }
+    } catch (error) {
+       alert(error);
+        
+}
 }
 
-ejercicio3(4, 0);
+ejercicio3();
 
